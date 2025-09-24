@@ -7,9 +7,9 @@
     "purity": "22K",
     "makingCharges": 2500,
     "images": [
-      "/images/gold-bangle1-1.webp",
-      "/images/placeholder.webp",
-      "/images/placeholder.webp"
+      "./images/gold-bangle1-1.webp",
+      "./images/placeholder.webp",
+      "./images/placeholder.webp"
     ],
     "highlights": [
       "हस्तनिर्मित पारंपरिक डिजाइन",
@@ -26,8 +26,8 @@
     "purity": "92.5 Silver",
     "makingCharges": 800,
     "images": [
-      "/images/silver-payal1-1.jpeg",
-      "/images/placeholder.webp"
+      "./images/silver-payal1-1.jpeg",
+      "./images/placeholder.webp"
     ],
     "highlights": [
       "घुंघरू के साथ खूबसूरत पायल",
@@ -44,8 +44,8 @@
     "purity": "92.5 Silver",
     "makingCharges": 800,
     "images": [
-      "/images/silver-payal1-1.jpeg",
-      "/images/placeholder.webp"
+      "./images/silver-payal1-1.jpeg",
+      "./images/placeholder.webp"
     ],
     "highlights": [
       "घुंघरू के साथ खूबसूरत पायल",
@@ -62,8 +62,8 @@
     "purity": "92.5 Silver",
     "makingCharges": 800,
     "images": [
-      "/images/silver-payal1-1.jpeg",
-      "/images/placeholder.webp"
+      "./images/silver-payal1-1.jpeg",
+      "./images/placeholder.webp"
     ],
     "highlights": [
       "घुंघरू के साथ खूबसूरत पायल",
@@ -80,8 +80,8 @@
     "purity": "92.5 Silver",
     "makingCharges": 100,
     "images": [
-      "/images/imitation.jpeg",
-      "/images/placeholder.webp"
+      "./images/imitation.jpeg",
+      "./images/placeholder.webp"
     ],
     "highlights": [
       "घुंघरू के साथ खूबसूरत पायल",
@@ -98,8 +98,8 @@
     "purity": "18K",
     "makingCharges": 1800,
     "images": [
-      "/images/gold-chain1-1.webp",
-      "/images/placeholder.webp"
+      "./images/gold-chain1-1.webp",
+      "./images/placeholder.webp"
     ],
     "highlights": [
       "Modern lightweight design",
@@ -116,8 +116,8 @@
     "purity": "92.5 Silver",
     "makingCharges": 300,
     "images": [
-      "/images/silver-bichiya1-1.jpeg",
-      "/images/placeholder.webp"
+      "./images/silver-bichiya1-1.jpeg",
+      "./images/placeholder.webp"
     ],
     "highlights": [
       "Traditional bichiya design",
@@ -134,9 +134,9 @@
     "purity": "22K",
     "makingCharges": 3200,
     "images": [
-      "/images/gold-choodi1-1.jpg",
-      "/images/placeholder.webp",
-      "/images/placeholder.webp"
+      "./images/gold-choodi1-1.jpg",
+      "./images/placeholder.webp",
+      "./images/placeholder.webp"
     ],
     "highlights": [
       "Designer collection exclusive",

@@ -9,9 +9,8 @@ export default function Navbar() {
         {/* Column 1: Logo */}
         <div className="flex items-center">
           <Link to="/">
-            <img
-              src="./src/assets/logo.png"
-              alt="Sapna Shri Jewellers Nagda सपना श्री ज्वैलर्स, नागदा"
+            <img src="/logo.png"
+              alt="Sapna Shri Jewellers Nagda | सपना श्री ज्वैलर्स, नागदा"
               className="h-24 w-auto"
             />
           </Link>

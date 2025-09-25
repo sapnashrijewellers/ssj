@@ -38,11 +38,11 @@
   },
   {
     "id": 10,
-    "name": "Gold Plated Payal (Anklet)",
-    "category": "गोल्ड प्लेटेड",
+    "name": "Gold Payal (Anklet)",
+    "category": "gold",
     "weight": 35,
-    "purity": "92.5 Silver",
-    "makingCharges": 800,
+    "purity": "18K",
+    "makingCharges": 4000,
     "images": [
       "./images/silver-payal1-1.jpeg",
       "./images/placeholder.webp"
@@ -56,7 +56,7 @@
   },
   {
     "id": 11,
-    "name": "Gold Plated Payal (Anklet)",
+    "name": "Payal (Anklet)",
     "category": "हाल ही में आए हुए",
     "weight": 35,
     "purity": "92.5 Silver",

@@ -4,6 +4,8 @@ import products from "../data/products.json";
 import rates from "../data/rates.json";
 import { getRatePerGram } from "../utils/calrate";
 
+import { FaWhatsapp } from "react-icons/fa";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -21,6 +23,11 @@ export default function ProductDetail() {
   const gst = (rates.gstPercent / 100) * base;
   const final = base + gst;
 
+  const phone = "917999215256"; // India country code + number
+  const message = encodeURIComponent(
+    `Hi, I want more details and discount on https://sapnashrijewellers.github.io//#/product/${product.id}`
+  );
+  const whatsappUrl = `https://wa.me/${phone}?text=${message}`;
   return (
     <div className="space-y-6 max-w-6xl mx-auto flex flex-col md:grid md:grid-cols-2 gap-2 w-full max-w-full">
       {/* Images */}
@@ -59,6 +66,15 @@ export default function ProductDetail() {
         <p><b>GST:</b> {rates.gstPercent}%</p>
         <p className="text-xl font-bold text-yellow-700 mt-3">कीमत: ₹{final.toFixed(0)}</p>
 
+        <div className="mt-4 flex items-center gap-4">
+          <FaWhatsapp
+            className="text-4xl md:text-5xl text-green-500 hover:text-green-600 cursor-pointer transition-transform transform hover:scale-110"
+            onClick={() => window.open(whatsappUrl, "_blank")}
+          />
+          <span className="text-sm text-gray-300">
+            Contact 7999215256 for more details & discount
+          </span>
+        </div>
         <ul className="mt-4 list-disc list-inside">
           {product.highlights.map((h, i) => <li key={i}>{h}</li>)}
         </ul>

@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import products from "../data/products.json";
 import rates from "../data/rates.json";
 import ProductCard from "../components/ProductCard";
-import { getRatePerGram } from "../utils/calrate";
+import { calculatePrice, getRatePerGram } from "../utils/calrate";
 
 
 export default function Category() {
@@ -24,8 +24,7 @@ export default function Category() {
             <ProductCard
               key={p.id}
               product={p}
-              goldRate={getRatePerGram(p)}
-              gst={rates.gstPercent}
+              price={calculatePrice(p)}              
             />
           ))}
         </div>

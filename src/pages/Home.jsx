@@ -1,7 +1,7 @@
 import products from "../data/products.json";
 import rates from "../data/rates.json";
 import ProductCard from "../components/ProductCard";
-
+import { getRatePerGram, calculatePrice } from "../utils/calrate";
 export default function Home() {
   const handpicked = products.filter(p => p.handpicked);
   const newArrivals = products.filter(p => p.newArrival);
@@ -13,11 +13,10 @@ export default function Home() {
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
         {handpicked.map(p => (
           <ProductCard
-            key={p.id}
-            product={p}
-            goldRate={rates["24KgoldRatePerGram"]}
-            gst={rates.gstPercent}
-          />
+              key={p.id}
+              product={p}
+              price={calculatePrice(p,getRatePerGram(p), rates.gstPercent)}              
+            />
         ))}
       </div>
   <h1 className="text-xl md:text-2xl font-bold">हाल ही में आए हुए...</h1>
@@ -25,15 +24,12 @@ export default function Home() {
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
         {newArrivals.map(p => (
           <ProductCard
-            key={p.id}
-            product={p}
-            goldRate={rates["24KgoldRatePerGram"]}
-            gst={rates.gstPercent}
-          />
+              key={p.id}
+              product={p}
+              price={calculatePrice(p)}              
+            />
         ))}
       </div>
-
-
     </div>
   );
 }

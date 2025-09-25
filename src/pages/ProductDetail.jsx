@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import { useState } from "react";
 import products from "../data/products.json";
 import rates from "../data/rates.json";
-import { getRatePerGram } from "../utils/calrate";
+import { calculatePrice, getRatePerGram } from "../utils/calrate";
 
 import { FaWhatsapp } from "react-icons/fa";
 
@@ -19,9 +19,6 @@ export default function ProductDetail() {
 
   if (!product) return <p>Product not found</p>;
 
-  const base = product.weight * getRatePerGram(product) + product.makingCharges;
-  const gst = (rates.gstPercent / 100) * base;
-  const final = base + gst;
 
   const phone = "917999215256"; // India country code + number
   const message = encodeURIComponent(
@@ -64,7 +61,8 @@ export default function ProductDetail() {
         <p><b>वज़न:</b> {product.weight} g</p>
         <p><b>आभूषण बनाने का शुल्क:</b> ₹{product.makingCharges}</p>
         <p><b>GST:</b> {rates.gstPercent}%</p>
-        <p className="text-xl font-bold text-yellow-700 mt-3">कीमत: ₹{final.toFixed(0)}</p>
+        <p className="text-xl font-bold text-yellow-700 mt-3">
+          कीमत: ₹{calculatePrice(product).toLocaleString('en-IN')}</p>
 
         <div className="mt-4 flex items-center gap-4">
           <FaWhatsapp

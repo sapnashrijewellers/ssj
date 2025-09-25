@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import rates from "../data/rates.json";
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
+  //const [isOpen, setIsOpen] = useState(false);
   const [currentRates] = useState(rates);
 
   return (

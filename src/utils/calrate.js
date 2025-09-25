@@ -6,9 +6,10 @@ import rates from "../data/rates.json";
  * @returns {number} - Rate per gram
  */
 export function getRatePerGram(product) {
+  
   const category = product.category.toLowerCase();
 
-  // Gold categories
+  //Gold categories
   if (category.includes("gold")) {
     switch (product.purity) {
       case "24K":
@@ -30,3 +31,15 @@ export function getRatePerGram(product) {
   // Other / imitation items
   return 0;
 }
+
+export function calculatePrice(product) {  
+  const rate = getRatePerGram(product);
+  const price =
+    product.weight * rate +
+    product.makingCharges +
+    (rates.gstPercent / 100) * (product.weight * rate + product.makingCharges);
+
+  return price;
+}
+
+

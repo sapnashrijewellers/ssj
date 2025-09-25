@@ -27,8 +27,7 @@ export default function Navbar() {
           <div className="flex flex-wrap justify-end gap-4 mb-1">
             <Link className="hover:underline" to="/">होम</Link>
             <Link className="hover:underline" to="/category/gold">सोना</Link>
-            <Link className="hover:underline" to="/category/silver">चाँदी</Link>
-            <Link className="hover:underline" to="/category/हाल ही में आए हुए">हाल ही में आए हुए</Link>          
+            <Link className="hover:underline" to="/category/silver">चाँदी</Link>            
           </div>
 
           {/* Bottom row: Live rates */}

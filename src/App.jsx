@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 
 export default function App() {
   return (
-    <>
+    <div className="container mx-auto">
       <Navbar />
       <div className="p-4 max-w-6xl mx-auto">
         <Routes>
@@ -18,6 +18,6 @@ export default function App() {
         </Routes>
       </div>
       <Footer />
-    </>
+    </div>
   );
 }

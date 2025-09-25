@@ -1,0 +1,271 @@
+[
+  {
+    "id": 1,
+    "name": "Classic Gold Bangle | क्लासिक सोने की चूड़ी",
+    "category": "gold",
+    "weight": 12.5,
+    "purity": "22K",
+    "makingCharges": 2500,
+    "images": [
+      "./images/gold-bangle1-1.webp",
+      "./images/placeholder.webp",
+      "./images/placeholder.webp"
+    ],
+    "highlights": [
+      "हस्तनिर्मित पारंपरिक डिजाइन",
+      "शादियों और त्योहारों के लिए बिल्कुल सही",
+      "टिकाऊ और लंबे समय तक चलने वाली फ़िनिश"
+    ],
+    "handpicked": true,
+    "newArrival":false
+  },
+  {
+    "id": 31,
+    "name": "Gold Bar 10 gm",
+    "category": "gold",
+    "weight": 10,
+    "purity": "22K",
+    "makingCharges": 1000,
+    "images": [
+      "./images/goldbar10.png",
+      "./images/placeholder.webp",
+      "./images/placeholder.webp"
+    ],
+    "highlights": [
+      "हस्तनिर्मित पारंपरिक डिजाइन",
+      "शादियों और त्योहारों के लिए बिल्कुल सही",
+      "टिकाऊ और लंबे समय तक चलने वाली फ़िनिश"
+    ],
+    "handpicked": true,
+    "newArrival":false
+  },
+  {
+    "id": 32,
+    "name": "Gold Bar 100 gm",
+    "category": "gold",
+    "weight": 100,
+    "purity": "22K",
+    "makingCharges": 2000,
+    "images": [
+      "./images/MMTC100G.webp",
+      "./images/placeholder.webp",
+      "./images/placeholder.webp"
+    ],
+    "highlights": [
+      "हस्तनिर्मित पारंपरिक डिजाइन",
+      "शादियों और त्योहारों के लिए बिल्कुल सही",
+      "टिकाऊ और लंबे समय तक चलने वाली फ़िनिश"
+    ],
+    "handpicked": true,
+    "newArrival":false
+  },
+  {
+    "id": 33,
+    "name": "Silver Bar 100 gm",
+    "category": "silver",
+    "weight": 100,
+    "purity": "92.5 Silver",
+    "makingCharges": 500,
+    "images": [
+      "./images/silver-100.png",
+      "./images/placeholder.webp",
+      "./images/placeholder.webp"
+    ],
+    "highlights": [
+      "हस्तनिर्मित पारंपरिक डिजाइन",
+      "शादियों और त्योहारों के लिए बिल्कुल सही",
+      "टिकाऊ और लंबे समय तक चलने वाली फ़िनिश"
+    ],
+    "handpicked": true,
+    "newArrival":false
+  },
+  {
+    "id": 25,
+    "name": "Classic Gold Bangle | क्लासिक सोने की चूड़ी",
+    "category": "gold",
+    "weight": 12.5,
+    "purity": "22K",
+    "makingCharges": 2500,
+    "images": [
+      "./images/gold-choodi1-2.webp",
+      "./images/placeholder.webp",
+      "./images/placeholder.webp"
+    ],
+    "highlights": [
+      "हस्तनिर्मित पारंपरिक डिजाइन",
+      "शादियों और त्योहारों के लिए बिल्कुल सही",
+      "टिकाऊ और लंबे समय तक चलने वाली फ़िनिश"
+    ],
+    "handpicked": true,
+    "newArrival":true
+  },
+  {
+    "id": 26,
+    "name": "Classic Gold Bangle | क्लासिक सोने की चूड़ी",
+    "category": "gold",
+    "weight": 12.5,
+    "purity": "22K",
+    "makingCharges": 2500,
+    "images": [
+      "./images/gold-choodi1-3.webp",
+      "./images/placeholder.webp",
+      "./images/placeholder.webp"
+    ],
+    "highlights": [
+      "हस्तनिर्मित पारंपरिक डिजाइन",
+      "शादियों और त्योहारों के लिए बिल्कुल सही",
+      "टिकाऊ और लंबे समय तक चलने वाली फ़िनिश"
+    ],
+    "handpicked": true
+  },
+  {
+    "id": 21,
+    "name": "Classic Gold Bangle | क्लासिक सोने की चूड़ी",
+    "category": "gold",
+    "weight": 12.5,
+    "purity": "22K",
+    "makingCharges": 3500,
+    "images": [
+      "./images/gold-bangle1-2.jpeg",
+      "./images/placeholder.webp",
+      "./images/placeholder.webp"
+    ],
+    "highlights": [
+      "हस्तनिर्मित पारंपरिक डिजाइन",
+      "शादियों और त्योहारों के लिए बिल्कुल सही",
+      "टिकाऊ और लंबे समय तक चलने वाली फ़िनिश"
+    ],
+    "handpicked": true
+  },
+  {
+    "id": 22,
+    "name": "Classic Gold Bangle | क्लासिक सोने की चूड़ी",
+    "category": "gold",
+    "weight": 12.5,
+    "purity": "22K",
+    "makingCharges": 3500,
+    "images": [
+      "./images/gold-bangle1-3.jpg",
+      "./images/placeholder.webp",
+      "./images/placeholder.webp"
+    ],
+    "highlights": [
+      "हस्तनिर्मित पारंपरिक डिजाइन",
+      "शादियों और त्योहारों के लिए बिल्कुल सही",
+      "टिकाऊ और लंबे समय तक चलने वाली फ़िनिश"
+    ],
+    "handpicked": true,
+    "newArrival":true
+  },
+  {
+    "id": 2,
+    "name": "Silver Payal (Anklet)",
+    "category": "silver",
+    "weight": 35,
+    "purity": "92.5 Silver",
+    "makingCharges": 800,
+    "images": [
+      "./images/silver-payal1-1.jpeg",
+      "./images/placeholder.webp"
+    ],
+    "highlights": [
+      "घुंघरू के साथ खूबसूरत पायल",
+      "दैनिक पहनने के लिए आरामदायक",
+      "हाई पॉलिश फ़िनिश"
+    ],
+    "handpicked": true
+  },
+  
+  {
+    "id": 12,
+    "name": "नेकलेस",
+    "category": "silver",
+    "weight": 0.06,
+    "purity": "92.5 Silver",
+    "makingCharges": 100,
+    "images": [
+      "./images/imitation.jpeg",
+      "./images/placeholder.webp"
+    ],
+    "highlights": [
+      "घुंघरू के साथ खूबसूरत पायल",
+      "दैनिक पहनने के लिए आरामदायक",
+      "हाई पॉलिश फ़िनिश"
+    ],
+    "handpicked": true
+  },
+  {
+    "id": 3,
+    "name": "Gold Chain with Locket",
+    "category": "gold",
+    "weight": 9.2,
+    "purity": "18K",
+    "makingCharges": 1800,
+    "images": [
+      "./images/gold-chain1-1.webp",
+      "./images/placeholder.webp"
+    ],
+    "highlights": [
+      "Modern lightweight design",
+      "Locket included",
+      "Ideal for gifting"
+    ],
+    "handpicked": true,
+    "newArrival":true
+  },
+  {
+    "id": 24,
+    "name": "Gold Chain with Locket",
+    "category": "gold",
+    "weight": 9.2,
+    "purity": "22K",
+    "makingCharges": 1800,
+    "images": [
+      "./images/gold-chain-2.avif",
+      "./images/placeholder.webp"
+    ],
+    "highlights": [
+      "Modern lightweight design",
+      "Locket included",
+      "Ideal for gifting"
+    ],
+    "handpicked": true
+  },
+  {
+    "id": 4,
+    "name": "Silver Toe Ring (Bichiya)",
+    "category": "silver",
+    "weight": 5,
+    "purity": "92.5 Silver",
+    "makingCharges": 300,
+    "images": [
+      "./images/silver-bichiya1-1.jpeg",
+      "./images/placeholder.webp"
+    ],
+    "highlights": [
+      "Traditional bichiya design",
+      "Adjustable size",
+      "Comfortable for everyday wear"
+    ],
+    "handpicked": false
+  },
+  {
+    "id": 5,
+    "name": "Designer Gold Choodi",
+    "category": "gold",
+    "weight": 15,
+    "purity": "22K",
+    "makingCharges": 3200,
+    "images": [
+      "./images/gold-choodi1-1.jpg",
+      "./images/placeholder.webp",
+      "./images/placeholder.webp"
+    ],
+    "highlights": [
+      "Designer collection exclusive",
+      "Intricate meenakari work",
+      "Premium festive wear"
+    ],
+    "handpicked": true
+  }
+]

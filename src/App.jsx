@@ -1,4 +1,5 @@
 // src/App.jsx
+import { DataProvider } from "./context/DataContext.jsx";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Category from "./pages/Category";
@@ -8,16 +9,18 @@ import Footer from "./components/Footer";
 
 export default function App() {
   return (
-    <div className="container mx-auto">
-      <Navbar />
-      <div className="p-4 max-w-6xl mx-auto">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/category/:category" element={<Category />} />
-          <Route path="/product/:id" element={<ProductDetail />} />
-        </Routes>
+    <DataProvider>
+      <div className="container mx-auto">
+        <Navbar />
+        <div className="p-4 max-w-6xl mx-auto">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/category/:category" element={<Category />} />
+            <Route path="/product/:id" element={<ProductDetail />} />
+          </Routes>
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </DataProvider>
   );
 }

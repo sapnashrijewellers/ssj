@@ -1,10 +1,10 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
-import rates from "../data/rates.json";
+import { useData } from "../context/DataContext";
 
-export default function Navbar() {
-  //const [isOpen, setIsOpen] = useState(false);
-  const [currentRates] = useState(rates);
+export default function Navbar() {  
+const {  rates } = useData();
+
+  if (!rates) return null;
 
   return (
     <nav className="text-white p-3 shadow-md w-full bg-black">
@@ -35,11 +35,11 @@ export default function Navbar() {
             <span className="flex items-center gap-1">
               <span className="animate-pulse w-3 h-3 bg-red-500 rounded-full inline-block"></span>
               <span>
-                सोना: <span className="text-green-500">₹{currentRates["24KgoldRatePerGram"]}</span>
+                सोना: <span className="text-green-500">₹{rates.gold24K}</span>
               </span>
             </span>
             <span>
-              चाँदी: <span className="text-green-500">₹{currentRates.silverRatePerGram}</span>
+              चाँदी: <span className="text-green-500">₹{rates.silver}</span>
             </span>
           </div>
         </div>

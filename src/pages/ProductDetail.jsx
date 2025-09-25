@@ -1,11 +1,10 @@
 import { useParams } from "react-router-dom";
 import { useState } from "react";
-import products from "../data/products.json";
-import rates from "../data/rates.json";
-import { calculatePrice, getRatePerGram } from "../utils/calrate";
+import { useData } from "../context/DataContext";
+import { calculatePrice } from "../utils/calrate";
+
 
 import { FaWhatsapp } from "react-icons/fa";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -14,17 +13,21 @@ import { Navigation, Pagination } from "swiper/modules";
 
 export default function ProductDetail() {
   const { id } = useParams();
-  const product = products.find(p => p.id.toString() === id);
+  const { products, rates } = useData();
   const [activeImage, setActiveImage] = useState(null);
 
-  if (!product) return <p>Product not found</p>;
 
+  if (!products || !rates) return <p>Loading...</p>;
+
+  const product = products.find(p => p.id.toString() === id);
+  if (!product) return <p>Product not found</p>;
 
   const phone = "917999215256"; // India country code + number
   const message = encodeURIComponent(
-    `Hi, I want more details and discount on https://sapnashrijewellers.github.io//#/product/${product.id}`
+    `Hi, I want more details and discount on https://sapnashrijewellers.github.io/#/product/${product.id}`
   );
   const whatsappUrl = `https://wa.me/${phone}?text=${message}`;
+
   return (
     <div className="space-y-6 max-w-6xl mx-auto flex flex-col md:grid md:grid-cols-2 gap-2 w-full max-w-full">
       {/* Images */}
@@ -49,7 +52,6 @@ export default function ProductDetail() {
                 />
               </div>
             </SwiperSlide>
-
           ))}
         </Swiper>
       </div>
@@ -62,7 +64,8 @@ export default function ProductDetail() {
         <p><b>आभूषण बनाने का शुल्क:</b> ₹{product.makingCharges}</p>
         <p><b>GST:</b> {rates.gstPercent}%</p>
         <p className="text-xl font-bold text-yellow-700 mt-3">
-          कीमत: ₹{calculatePrice(product).toLocaleString('en-IN')}</p>
+          कीमत: ₹{calculatePrice(product, rates).toLocaleString('en-IN')}
+        </p>
 
         <div className="mt-4 flex items-center gap-4">
           <FaWhatsapp

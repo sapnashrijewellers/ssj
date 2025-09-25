@@ -1,13 +1,15 @@
 import { useParams } from "react-router-dom";
-import products from "../data/products.json";
-import rates from "../data/rates.json";
+import { useData } from "../context/DataContext";
 import ProductCard from "../components/ProductCard";
-import { calculatePrice, getRatePerGram } from "../utils/calrate";
+import { calculatePrice } from "../utils/calrate";
 
 
 export default function Category() {
   const { category } = useParams();
+const { products, rates } = useData();
 
+if (!products || !rates) return <p>Loading...</p>;
+  
   const filtered = products.filter(
     p => p.category.toLowerCase() === category.toLowerCase()
   );  
@@ -24,7 +26,7 @@ export default function Category() {
             <ProductCard
               key={p.id}
               product={p}
-              price={calculatePrice(p)}              
+              price={calculatePrice(p, rates)}              
             />
           ))}
         </div>

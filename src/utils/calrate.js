@@ -1,45 +1,49 @@
-import rates from "../data/rates.json";
-
 /**
  * Returns the rate per gram for a product based on its category and purity.
  * @param {object} product - The product object
+ * @param {object} rates - Rates object from DataContext
  * @returns {number} - Rate per gram
  */
-export function getRatePerGram(product) {
-  
-  const category = product.category.toLowerCase();
+export function getRatePerGram(product, rates) {
+  if (!rates) return 0;
 
-  //Gold categories
+  const category = product.category?.toLowerCase() || "";
+
+  // Gold categories
   if (category.includes("gold")) {
     switch (product.purity) {
       case "24K":
-        return rates["24KgoldRatePerGram"];
+        return rates.gold24K;
       case "22K":
-        return rates["22KgoldRatePerGram"];
+        return rates.gold22K;
       case "18K":
-        return rates["18KgoldRatePerGram"];
+        return rates.gold18K;
       default:
-        return rates["22KgoldRatePerGram"]; // fallback
+        return rates.gold22K; // fallback
     }
   }
 
   // Silver categories
   if (category.includes("silver")) {
-    return rates["silverRatePerGram"];
+    return rates.silver;
   }
 
   // Other / imitation items
   return 0;
 }
 
-export function calculatePrice(product) {  
-  const rate = getRatePerGram(product);
-  const price =
-    product.weight * rate +
-    product.makingCharges +
-    (rates.gstPercent / 100) * (product.weight * rate + product.makingCharges);
+/**
+ * Calculates the final price for a product.
+ * @param {object} product - The product object
+ * @param {object} rates - Rates object from DataContext
+ * @returns {number} - Final calculated price
+ */
+export function calculatePrice(product, rates) {
+  if (!rates) return 0;
 
-  return price;
+  const rate = getRatePerGram(product, rates);
+  const base = product.weight * rate + product.makingCharges;
+  const gst = (rates.gstPercent / 100) * base;
+
+  return base + gst;
 }
-
-

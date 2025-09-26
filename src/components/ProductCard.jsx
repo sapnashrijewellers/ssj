@@ -20,6 +20,7 @@ export default function ProductCard({ product, price }) {
           <div className="w-full flex items-center justify-center bg-gray-50 overflow-hidden">
             <img
               src={product.images[0]}
+              loading="lazy"
               alt={product.name}
               className="h-[100px] object-cover transition-transform duration-300 hover:scale-105"
             />

@@ -8,7 +8,7 @@ const {  rates } = useData();
 
   return (
     <nav className="text-white p-3 shadow-md w-full bg-black">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex justify-between items-start">
+      <div className="mx-auto max-w-7xl flex justify-between items-start">
 
         {/* Left: Logo */}
         <div className="flex-shrink-0 flex items-center">
@@ -35,11 +35,22 @@ const {  rates } = useData();
             <span className="flex items-center gap-1">
               <span className="animate-pulse w-3 h-3 bg-red-500 rounded-full inline-block"></span>
               <span>
-                सोना: <span className="text-green-500">₹{rates.gold24K}</span>
+                सोना (24K): <span className="text-green-500">₹{rates.gold24K}</span>
               </span>
             </span>
             <span>
-              चाँदी: <span className="text-green-500">₹{rates.silver}</span>
+              चाँदी (92.5): <span className="text-green-500">₹{rates.silver*1000}</span>
+            </span>
+          </div>
+          <div className="flex justify-end gap-4">
+            <span className="flex items-center gap-1">
+              <span className="animate-pulse w-3 h-3 bg-red-500 rounded-full inline-block"></span>
+              <span>
+                सोना (22K): <span className="text-green-500">₹{rates.gold22K}</span>
+              </span>
+            </span>
+            <span>
+              चाँदी(जेवर): <span className="text-green-500">₹{(rates.silver*1000)*(0.75)}</span>
             </span>
           </div>
         </div>

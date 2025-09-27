@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": "79aba6da-25c1-4bdb-bcf5-0635a90ecaee",
     "name": "Classic Gold Bangle | क्लासिक सोने की चूड़ी",
     "category": "gold",
     "weight": 12.5,
@@ -64,7 +64,7 @@
     "name": "Silver Bar 100 gm",
     "category": "silver",
     "weight": 100,
-    "purity": "92.5 Silver",
+    "purity": "पाठ की चाँदी",
     "makingCharges": 500,
     "images": [
       "silver-100.png",
@@ -162,7 +162,7 @@
     "name": "Silver Payal (Anklet)",
     "category": "silver",
     "weight": 35,
-    "purity": "92.5 Silver",
+    "purity": "चाँदी जेवर",
     "makingCharges": 800,
     "images": [
       "silver-payal1-1.jpeg",
@@ -180,8 +180,8 @@
     "id": 12,
     "name": "नेकलेस",
     "category": "silver",
-    "weight": 0.06,
-    "purity": "92.5 Silver",
+    "weight": 20,
+    "purity": "चाँदी जेवर",
     "makingCharges": 100,
     "images": [
       "imitation.jpeg",
@@ -236,7 +236,7 @@
     "name": "Silver Toe Ring (Bichiya)",
     "category": "silver",
     "weight": 5,
-    "purity": "92.5 Silver",
+    "purity": "चाँदी जेवर",
     "makingCharges": 300,
     "images": [
       "silver-bichiya1-1.jpeg",
